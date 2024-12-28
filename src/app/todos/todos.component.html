@@ -2,9 +2,9 @@
 
 <ul class="todos">
     @for (todo of todoItems(); track todo.id) {
-        <li class="todo__items">
-            <h4>{{  todo.title  }}</h4>
-            <input type="checkbox" [checked]="todo.completed"/> 
-        </li>
+    <li class="todos__items">
+        <h4>{{ todo.title }}</h4>
+        <input type="checkbox" [checked]="todo.completed" />
+    </li>
     }
 </ul>
